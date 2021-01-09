@@ -7,15 +7,26 @@
 <h1 id="title">Survey</h1>
 <p id="description">Sample survey form</p>
 <form id="survey-form">
-	<input type="text" id="name">
-	<input type="text" id="email">
-	<input type="text" id="number">
-	<input type="text" id="dropdown">
-
+	<label for="name">Name</label>
+		<input type="text" id="name-label" required placeholder="Name">
+	<label for="email">Email</label>
+		<input type="email" id="email-label" required placeholder="Email">
+	<label for="number">Age</label>
+		<input type="number" id="number-label" min="1" max="99" placeholder="Age">
+	<label for="dropdown-label">Select</label>
+		<input type="select" id="dropdown">
+	<label for="Radio 1">Radio Test 1 </label>
+		<input type="radio" id="radio1" name="radio1-2">
+	<label for="Radio 2">Radio Test 2</label>
+		<input type="radio" id="radio2" name="radio1-2">
+	<label for="Check 1">Checkbox 1</label>
+		<input type="checkbox" id="check1" name="check1-2">
+	<label for="Check 2">Checkbox 2</label>
+		<input type="checkbox" id="check2" name="check1-2">
+	<label for="comments"></label>
+		<input type="textarea" id="comments">Comments 
+	<button id="submit" type="submit">Submit</button>
 </form>
-
-
-
 
 
 
